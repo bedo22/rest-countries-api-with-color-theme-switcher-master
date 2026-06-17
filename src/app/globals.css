@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-dark-elements: hsl(209, 23%, 22%);
+  --color-dark-bg: hsl(207, 26%, 17%);
+  --color-light-text: hsl(200, 15%, 8%);
+  --color-light-input: hsl(0, 0%, 50%);
+  --color-light-bg: hsl(0, 0%, 99%);
+  --color-white: hsl(0, 100%, 100%);
+
+  --font-sans: var(--font-nunito-sans), sans-serif;
+
+  --shadow-card: 0 0 20px rgb(0 0 0 / 0.06);
+}
+
+body {
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
